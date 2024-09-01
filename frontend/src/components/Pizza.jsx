@@ -9,7 +9,6 @@ const Pizza = () => {
   const getPizza = async () => {
     const response = await fetch(urlPizza)
     const datos = await response.json()
-    console.log(datos)
     setPizza(datos)
   }
 
