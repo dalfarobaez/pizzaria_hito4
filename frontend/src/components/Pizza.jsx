@@ -4,7 +4,7 @@ import precioChileno from '../utils/utils.js'
 const urlPizza = 'http://localhost:5000/api/pizzas/p001'
 
 const Pizza = () => {
-  const [pizza,setPizza] = useState ({})
+  const [pizza,setPizza] = useState ({ingredients:[],price:0})
 
   const getPizza = async () => {
     const response = await fetch(urlPizza)
